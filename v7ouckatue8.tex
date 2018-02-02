@@ -1,11 +1,16 @@
+
+
 \section{Brief Summary}
 
-Hombert, Schoar, Sraer, and Thesmar (2018) --- henceforth HSST --- study how an unemployment insurance (UI) reform in France that provided significant downward insurance for entrepreneurs affected firm creation, selection into self-employment, and incumbent firm growth. Previous research has focused mostly on how entry barriers affect level of entrepreneurial activity, which is not sufficient to evaluate overall welfare implications when selection into entrepreneurship changes or when there are strong crowding-out effects. \newline
+Hombert, Schoar, Sraer, and Thesmar (2018)
+\footnote{The most recent version of the working paper can be found here: \url{http://appli8.hec.fr/hombert/Hombert_Schoar_Sraer_Thesmar.pdf}}
+--- henceforth HSST --- study how downward insurance for entrepreneurs affected firm creation, selection into self-employment, and incumbent firm growth. They exploit the 2002 PARE reform in France, which aimed at incentivizing active search efforts by unemployed workers. An important aspect of the reform was to encourage unemployed workers to start their own business. Prior to the reform, individuals lost all eligibility to their accumulated unemployment benefits when starting a business. After the reform, there was now a period of up to 3 years in which previously unemployed entrepreneurs could fall back to their UI program in case their business failed. Additionally, during that period, their entrepreneurial income would be supplemented up to the amount of their entitled benefits in case it fell below that level. \newline
 
 \noindent The authors employ a difference-in-difference design to show that level of entrepreneurial activity --- measured as number of new firm creations using data from the French firm registry --- increased considerably in response to the reform, whereas observable characteristics (education, growth expectations) and performance measures (failure rate, hiring rate) of newly created firms have not worsened significantly. When contrasting two views on entrepreneurship, the results support the experimentation view (entry barriers can deter productive firm creation) more than the selection view (entry barriers only deter unproductive firm creation).
 
 Additionally, the authors evaluate the impact of increased entry on incumbents and find evidence for large employment crowding-out effects. Nonetheless, the reform most likely had a beneficial aggregate effect on the economy, because new firms are on average more productive than incumbent firms, thus suggesting that encouraging entrepreneurship can spur creative destruction dynamics in an economy.
 
+Previous research has focused mostly on how entry barriers affect level of entrepreneurial activity, which is not sufficient to evaluate overall welfare implications when selection into entrepreneurship changes or when there are strong crowding-out effects.
 
 
 \section{Economic Frameworks}
@@ -20,9 +25,6 @@ There are two industries, one with high (fixed) entry cost and one with low entr
 
 An expansion of insurance for failed entrepreneurs reduces the cutoff level of managerial talent, thus increases the number of firms but reduces average productivity. This is because marginal agents who are shifted by the reform are those with talent just below the cutoff, because the entry decision is one-dimensional. The number of shifted agents depends on how ``spread out'' the talent distribution is. If talent is very heterogeneous, i.e. the Pareto index is close to $1$, then only a low mass of agents now become entrepreneurs; yet, the deterioration of productivity is significant as marginal entrepreneurs are much less talented. On the other hand, if talent is very equally distributed (high Pareto index), then the number of new firms created is large without much loss in quality. 
 
-This is also how HSST make sense of their empirical results, which interpreted within this framework suggest exactly that talent is relatively homogeneous: We observe a large stimulation in firm creation without significant deterioration of quality.
-
-
 \subsection{The Roy model as complementary framework}
 
 The framework described above neglects the multi-dimensional nature of choosing whether to select into self-employment or not. Most strikingly, risk aversion does not vary across the population, although the authors emphasize that one reason why downward insurance does not diminish the quality of new business is that these might be started by talented but particularly risk averse agents (e.g. on page 2: ``The risk associated with starting a firm might dissuade
@@ -30,14 +32,13 @@ talented but risk averse individuals from this activity [...]''). I therefore no
 
 \subsubsection*{Setup}
 
-Agent $i$ faces the choice between sorting into one of three occupations: unemployment ($U$), paid employment ($E$), or self-employment ($S$). The respective incomes she receives are denoted by $y^U, y^E$ and $y^S$, where
+Agent $i$ faces the choice between sorting into one of three occupations: unemployment ($U$), paid employment ($E$), or self-employment ($S$). The respective incomes she receives are denoted by $y^U, y^E$ and $y^S$, where \vspace{-0.75em}
 \begin{align}
 y^U_i & = \, \mu^U + v_i^U \\[3pt]
 y^E_i & = \, \mu^E + v_i^E \\[3pt]
 y^S_i & = \, \mu^S + v_i^S + \eta_i \; .
-\end{align}
-
-\noindent $\mu^k$ represents population averages and $v_i^k$ represents mean zero idiosyncratic components  that are known to the agent at the time of decision making ($k \in \{U, E, S\}$). Importantly, market luck $\eta_i$ is ex ante unknown to her, reflecting the fact that self-employment is associated with significant economic risk.\footnote{One could also interpret this at uncertainty about own managerial talent.} Hence, $y^S$ is stochastic but $y^U_i$ and $y^E_i$ are deterministic from the agent's point of view. I will occasionally use the notation $\mu_i^k \, = \, \mu^k + v_i^k$. The expected income $\mu_i^E$ under self-employment can be used as measure for entrepreneurial talent or ex ante firm quality.
+\end{align} \vspace{-0.25em}
+ $\mu^k$ represents population averages and $v_i^k$ represents mean zero idiosyncratic components  that are known to the agent at the time of decision making ($k \in \{U, E, S\}$). Importantly, market luck $\eta_i$ is ex ante unknown to her, reflecting the fact that self-employment is associated with significant economic risk.\footnote{One could also interpret this at uncertainty about own managerial talent.} Hence, $y^S$ is stochastic but $y^U_i$ and $y^E_i$ are deterministic from the agent's point of view. I will occasionally use the notation $\mu_i^k \, = \, \mu^k + v_i^k$. The expected income $\mu_i^E$ under self-employment can be used as measure for entrepreneurial talent or ex ante firm quality.
 
 In addition to payoffs, the agent incurs a fixed disutility of working $\theta$ if she is in (paid- or self-) employment; in case she chooses to select into self-employment, she needs to take out a loan $b$ and repay it with interest rate $r$.\footnote{I assume that borrowers have no means for screening and therefore offer the same interest rate to every entrepreneur.} If debt repayment $b \, (1+r)$ exceeds her realized income from self-employment, she defaults and has to give up her entire income. This corresponds to a situation where there is no limited liability, which is suitable for sole proprietorships that HSST describe as dominant legal business form for the population targeted by PARE. Social insurance, however, can provide a consumption floor $\underline{c} \leq y_i^U$ that cannot be touched by creditors. For simplicity, I assume that $\underline{c}$ is only introduced by the reform and no minimum consumption guarantee exists prior to the reform. \newline
 
@@ -47,6 +48,7 @@ k = E \quad & \textit{ if } \, u(c^E_i) \, - \, \theta \:  \geq \:  \max\bigg\{u
 k = S \quad & \textit{ if }  \, \mathbb{E} \, u(c_i^S) \, - \, \theta  \:  > \:  \max\bigg\{u(c_i^U) \, , \: u(c^E_i)  \, - \, \theta \bigg\} \\[3pt]
 k = U \quad & \textit{ else} 
 \end{align}
+%\, u(c^U_i) \, \geq \,  \max\bigg\{u(c_i^E), \: \mathbb{E} \, u(c_i^S) \bigg\} \,  - \,  \theta
 This is essentially a Roy model formulation where agent's maximize utility instead of payoffs. This allows to integrate risk aversion into agents' decision problem.
 
 
@@ -63,6 +65,7 @@ where $\gamma$ is the absolute risk aversion parameter. Concavity, thus risk ave
 so the certainty equivalent is always equal to the expected value minus the risk premium $\gamma \sigma^2 /2$ that only depends on variance and risk aversion of the agent. Notice that the risk premium strictly increases in $\gamma$.
 
 Slight complications arise due to the introduction of censoring at the consumption floor $\underline{c}$, which necessitates an extension of the standard formula that I will derive here. Let $c = \max\{\mu + \eta, \, \underline{c}\}$.
+
 \begin{align}
 \mathbb{E} \,  u(c) & \, = \,  \mathbb{E}\left[- \, \frac{1}{\gamma} \,\exp\{- \,  \gamma \, c  \} \right]  \\[6pt]
 & = \, -  \, \Phi\left(\frac{\underline{c} - \mu}{\sigma}\right) \: \frac{1}{\gamma} \,  \exp\{- \,  \gamma \, \underline{c}  \}   \; + \; \frac{1}{\gamma} \, 
@@ -71,8 +74,8 @@ Slight complications arise due to the introduction of censoring at the consumpti
  \left[1 - \Phi\left(\frac{\underline{c} + \gamma \sigma^2 - \mu}{\sigma}\right) \right] \;  \frac{1}{\gamma} \, \exp\bigg\{- \gamma \, \left(\mu -  \gamma \sigma^2 /2 \right) \bigg\} \\[6pt]
 & = \, \Phi\left(\frac{\underline{c} - \mu}{\sigma}\right) \: u(\underline{c})   \; +  \; \left[1 - \Phi\left(\frac{\underline{c} - \mu}{\sigma}\right) \right] \: \frac{1 - \Phi\left(\frac{\underline{c} + \gamma \sigma^2 - \mu}{\sigma}\right)}{1 - \Phi\left(\frac{\underline{c} - \mu}{\sigma}\right)} \; u\left(\mu -  \gamma \sigma^2 /2 \right)
 \end{align}
+% & = \, \frac{1}{1 - \Phi\left(\frac{\underline{c} - \mu}{\sigma} \right)} \:  \exp\bigg\{- \gamma \, \left(\mu -  \gamma \sigma^2 /2 \right) \bigg\}  \: \frac{1}{\sqrt{2 \pi \sigma^2}} \, \int\displaylimits_{\underline{c}}^{+ \infty} - \exp\bigg\{- \, \frac{(c - \mu + \gamma \sigma^2)^2}{2 \sigma^2} \bigg\} \: dc \\[3pt]
 This term can be interpreted in terms of a compound lottery, where agents receive either $\underline{c}$ for certain with probability $P(c \leq \underline{c})$ (first summand) or, with probability $P(c > \underline{c})$, the lottery induced by a normal distribution that is truncated from below at $\underline{c}$ (second summand). 
-
 
 
 \subsubsection*{Occupation choice in the population}
@@ -92,7 +95,7 @@ and the population quality of new business would be
 \end{equation}
 Agents are likely to start a firm when their expected profit is high relative to their wage income and when they their risk aversion (and hence their risk premium) is low. 
 
-For illustration purposes, ignore any correlation between $\mu_i^S$ and $\mu_i^E$ for now. If there was no heterogeneity in risk aversion $\gamma$, then self-selection into entrepreneurship is based solely on differences in expected surplus generated. Similarly, if $\gamma_i$ was perfectly negatively correlated with $\mu_i^S$, i.e. the most talented entrepreneurs are also the least risk averse, then only the ex ante most promising business would be created. By contrast, whenever $\mu_i^S$ and $\gamma_i$ do not have correlation $-1$, there can be agents $i$ and $j$ such that $\mu_i^S > \mu_j^S$, but $\mu_i^S - \gamma_i \sigma^2 /2 \, < \, \mu^E + b (1+r) \, < \,  \gamma_j \sigma^2 /2  > \mu_i^S - \mu_j^S$. In words, agent $i$ would be more suited as entrepreneur than $j$ in terms of expected surplus, but only $j$ starts a business, because $i$ is too risk averse. This is an explanation that HSST put forward but do not model in their economic framework, but is standard in the generalized Roy model here in which we interpret the risk premium as costs. \newline
+For illustration purposes, ignore any correlation between $\mu_i^S$ and $\mu_i^E$ for now. If there was no heterogeneity in risk aversion $\gamma$, then self-selection into entrepreneurship is based solely on differences in expected surplus generated. Similarly, if $\gamma_i$ was perfectly negatively correlated with $\mu_i^S$, i.e. the most talented entrepreneurs are also the least risk averse, then only the ex ante most promising business would be created. By contrast, whenever $\mu_i^S$ and $\gamma_i$ do not have correlation $-1$, there can be agents $i$ and $j$ such that $\mu_i^S > \mu_j^S$, but $\mu_i^S - \gamma_i \sigma^2 /2 \, < \, \mu^E + b (1+r) \, < \,  \gamma_j \sigma^2 /2  > \mu_i^S - \mu_j^S$. In words, agent $i$ would be more suited as entrepreneur than $j$ in terms of expected surplus, but only $j$ starts a business, because $i$ is too risk averse. This is an explanation that HSST put forward but do not model in their economic framework, but is standard in the generalized Roy model here in which we interpret the risk premium as costs.
 
 
 \subsubsection*{Effect of downward insurance}
@@ -104,7 +107,7 @@ Notice that a higher $\underline{c}$ unambiguously increases the expected utilit
 \begin{equation}
 y^E_i \:  = \:  \mu^S_i \, - \,  b \, (1+r) \, - \, \gamma_i \, \sigma^2
 \end{equation} 
-As before, this agent's is deterred from starting a firm by both the mean and the variance of business income. It is intuitively clear that compared to the pool of existing entrepreneurs, marginal agents do not necessarily have lower $\mu^S_i$ even when neglecting differences in $y^E_i$, but might just have a higher $\gamma_i$. \newline
+As before, this agent's is deterred from starting a firm by both the mean and the variance of business income. It is intuitively clear that compared to the pool of existing entrepreneurs, marginal agents do not necessarily have lower $\mu^S_i$ even when neglecting differences in $y^E_i$, but might just have a higher $\gamma_i$. Thus, the characteristics of marginal agents depends on the local correlation pattern of potential incomes and risk aversion. \newline
 
 \noindent Now I move to the insurance value of introducing a substantial income floor. The expected utility gain from self-employment comes from entirely the shift of probability mass from the left tail to a mass point at $\underline{c}$. Hence, the increase in utility is
 \begin{align}
@@ -112,24 +115,36 @@ As before, this agent's is deterred from starting a firm by both the mean and th
 & = \: \Phi\left(\frac{\underline{c} - \mu_i^S}{\sigma}\right) \: u(\underline{c}) \; - \; \Phi\left(\frac{\underline{c} + \gamma_i \, \sigma^2 - \mu_i^S}{\sigma}\right) \: u\left(\mu_i^S -  \gamma_i \,  \sigma^2 /2 \right)
 \end{align}
 This is the insurance value provided to an agent through the income guarantee. To gain intuition, it is useful to plot the utility increase as function of $\underline{c}$. I show an example in Figure 1, where I set $\mu = 5$, $\sigma$, $\gamma = 0.5$. 
-Obviously, the insurance value increases with the level of guaranteed consumption. However, on the far left tail of the entrepreneurial income distribution, it is is close to zero, simply because the guarantee is very unlikely to be binding. 
+Obviously, the insurance value increases with the level of guaranteed consumption. However, on the far left tail of the entrepreneurial income distribution, it is is close to zero, simply because the guarantee is very unlikely to be binding.
+\begin{figure}[htb]  \vspace{-1em}
+\centering
+\caption{Value of insurance} \vspace{-3pt}
+\includegraphics[width=0.6\textwidth]{insurance.png} \vspace{-1.5em}
+\end{figure}
+
+Similarly, given a level $\underline{c}$, agents with high expected business profits benefit less from downward insurance than less talented agents, as they are less likely to actually fall below it. It is thus still to be expected that marginal entrepreneurs might on average be less productive than inframarginal entrepreneurs. How strong this effect is now not only depends on the marginal distribution of managerial talent, but also on the joint distribution of all potential incomes and risk aversion. Recall, though, that the actual income guarantee provided through PARE was tied to pre-unemployment income (with a replacement rate of about 70$\%$), and hence the consumption floor $\underline{c}$ might tend to increase $\mu_i^S$, which is another factor which can explain the finding that entrepreneur quality did not decrease significantly due to the reform.
+
+\subsubsection*{Further lessons}
+
+Of course, the Roy framework described so far abstracts from many real-world aspects. Most importantly maybe, it is a static model which does not account for dynamics due to job search, human capital considerations, experimentation etc. Still, the model draws attention to economic mechanisms that are not included in the Lucas general equilibrium framework described by HSST, although my analysis here has just barely breached its surface. It formalizes the intuition that risk averse agents but talented agents might be encouraged to start firms through the reform, but it more generally also shows that the joint distribution of potential incomes could also play a role, in particular when they are positively correlated. For example, potentially savvy businesswomen might simply not go self-employed because their paid wages are also high. HSST also do not consider the important fact that income guarantees are actually tied to pre-unemployment income. On another note, there might be general equilibrium effects that funding becomes more costly, i.e. that the equilibrium interest rate $r$ increases, when aspiring entrepreneurs become more numerous, which would attenuate the effects of PARE.
+
 
 \section{Empirical Strategy}
 
-To study the effect of downward insurance on entrepreneurship, HSST exploit the 2002 PARE reform in France, which aimed at incentivizing active search efforts by unemployed workers. An important aspect of the reform was to encourage unemployed workers to start their own business. Prior to the reform, individuals lost all eligibility to their accumulated unemployment benefits when starting a business. After the reform, there was now a period of up to 3 years in which previously unemployed entrepreneurs could fall back to their UI program in case their business failed. Additionally, during that period, their entrepreneurial income would be supplemented up to the amount of their entitled benefits in case it fell below that level. \newline
-
-\noindent Using data from the official French firm registry from 1993 to 2008, the authors study firm creation before and after the PARE reform. Simple graphical evidence when plotting number of firm registries per month shows a surge in firm creation after the reform period that is in scale unprecedented in the decade before the reform (about 25 percent increase from 2002 to 2006) . However, this is not necessarily (only) due to the reform, as for example France in general experienced a period of economic resurgence during the period from 2002 to 2007. 
+\noindent Using data from the official French firm registry from 1993 to 2008, HSST study firm creation before and after the 2002 PARE reform. Simple graphical evidence when plotting number of firm registries per month shows a surge in firm creation after the reform period that is in scale unprecedented in the decade before the reform (about 25 percent increase from 2002 to 2006) . However, this is not necessarily (only) due to the reform, as for example France in general experienced a period of economic resurgence during the period from 2002 to 2007. 
 
 A general weakness of the data is that the authors cannot observe if firms were indeed started by unemployed, i.e. the group that was actually targeted by the reform. Therefore, HSST also examine the take-up rate of the ACCRE subsidy program, which is granted only to unemployed individuals starting a new business. ACCRE take-up also exhibits a strong upward slope following the reform.  \newline
 
 \noindent To provide causal evidence for positive impacts of PARE, the authors use a difference-in-differences approach based on the idea that some industries (e.g. transport, health care, personal services) are more attractive for self-employed and budding business than others (e.g. wholesale trading, work agencies, real-estate development), for example because of differences in capital requirements, fierceness of competition etc. Again using firm registry data, the authors construct a treatment intensity variable on 4-digit industry level that is defined by fraction of sole proprietorships before the reform. 
 \footnote{Using an alternative treatment intensity variable defined by fraction of firms with zero employees does not change the results.}
 As sole proprietorships (as opposed to partnerships and corporations) are the most suitable legal form for a small business created by single individuals, industries with traditionally higher fraction of sole proprietorships should be affected more strongly by the reform.
-To operationalize this approach, the authors split the $290$ industries into treatment intensity quartiles. Then low intensity quartiles (Q1, Q2) can be thought of as control groups and high intensity quartiles (Q3, Q4) as treatment groups.  Plotting firm creation per group over time indeed shows that the firm creation growth rates started to diverge roughly starting from 2002, where growth rate monotonically increased from Q1 to Q4. Note, however, that it is conceivable that also in Q4 entrepreneurial activity was positively stimulated by the reform, so any quantitative results might not be straightforward to interpret. One way is to think about the estimates as lower bounds of actual effects. \newline
+To operationalize this approach, the authors split the $290$ industries into treatment intensity quartiles. Then low intensity quartiles (Q1, Q2) can be thought of as control groups and high intensity quartiles (Q3, Q4) as treatment groups.  Plotting firm creation per group over time indeed shows that the firm creation growth rates started to diverge roughly starting from 2002, where growth rate monotonically increased from Q1 to Q4. Note, however, that it is conceivable that also in Q4 entrepreneurial activity was positively stimulated by the reform, so any quantitative results might not be straightforward to interpret.\footnote{One way is to think about the estimates as lower bounds of actual effects.} Moreover, it is not clear whether the counterfactual with parallel trends is really a well-founded, because --- thinking back to the Roy model --- responses to changing economic environments depend on the shape of joint distributions and it is easy to come up with examples where trends in fraction of self-employment across industries will not be parallel in absence of reforms. \newline
 
 \noindent PARE's effect on industry outcomes can be identified under the usual difference-in-differences assumption of common trends in absence of the reform. This would for example be violated if treatment intensity is correlated with industry characteristics that determine exposure to aggregate fluctuations. While the pre-trends in firm creation growth rate in the two years before the reform look similar enough, the authors do not show pre-trends further in the past, which would be interesting in light of the macroeconomic fluctuations at the dusk of the last millennium. 
 
-To provide additional justification for the empirical approach, the authors firstly show that treatment intensity is not correlated with total industry sales growth after the reform. Secondly, they control for capital intensity (average assets-to-labor ratio) and industry growth (average growth rate of sales) prior to the reform in all their regressions. In general, there is no evidence for strong confounding effects of these two industry characteristics.
+To provide additional justification for the empirical approach, the authors firstly show that treatment intensity is not correlated with total industry sales growth after the reform. Secondly, they control for capital intensity (average assets-to-labor ratio) and industry growth (average growth rate of sales) prior to the reform in all their regressions. In general, there is no evidence for strong confounding effects of these two industry characteristics, which does not mean that treatment intensity is not confounded by other characteristics. \newline
+
+\noindent Eventually, it is as usual not possible to explicitly test identifying assumptions. But while one can question the internal validity, it is worth mentioning that the nationwide implementation of the reform appeases concerns about external validity; although one could still wonder if similar reform in other countries might yield different effects, as for example the authors acknowledge that France has an unusually high share of skilled unemployed.
 
 
 \section{Results}
@@ -143,17 +158,20 @@ The authors examine monthly firm creation for each industry in the time period f
 
 With an influx of new entrepreneurs following the reform, it is possible that, as illustrated in the economic frameworks, characteristics of the entrepreneur pool have changed. For example in the Roy model, the marginal agents who are induced to start a business might typically be less talented and more risk averse than existing entrepreneurs. Actual decisions to start a business might be influenced by many other factors, so whether and how much the reform had compositional effects on small business remains an empirical question. HSST focus on a set of observable measures that could proxy for firm quality. Specifically, they compare two ex post measures, exit rates and hiring rates, across treatment groups before and after the reform. Furthermore, they use data from the SINE survey, a large -scale survey sent out to individuals registering new firms, to compare ex ante characteristics of entrepreneurs before (2002) and after the reform (2006). The empirical strategy again makes heavy use of the common trends assumption across industries.
 
-Regarding the ex post measures, there is no evidence that either exit rates (which are commonly interpreted as failure rates) or hiring rates --- the fraction who hired at least one employee --- within two years of firm creation have evolved differentially across treatment groups after the reform. 
+Regarding the ex post measures, there is no evidence that either exit rates (which are commonly interpreted as failure rates) or hiring rates --- the fraction who hired at least one employee --- within two years of firm creation have evolved differentially across treatment groups after the reform. Moreover, the authors include questionnaire responses of entrepreneurs in the SINE surveys with respect to their education level and their plans to hire new employees in the near future (as proxy for subjective business outlook). Again, their is now evidence for a significant decrease in entrepreneur composition and if anything a slightly higher optimism in Q4 compared to Q1. \newline
 
-\noindent It is worthwhile to note these results do not necessarily imply that marginal entrepreneurs have approximately the same quality as inframarginal ones. Although the boom in firm creation was quite sizeable, difference in average characteristics of firms might be bleached out by the still large majority of inframarginal firms. The authors might simply be too underpowered to detect any systematic differences in averages coming from the minority of marginal entrepreneurs.
+\noindent Obviously, it cannot be ruled that the pool of entrepreneurs has changed on unobservable dimensions such as long-term business acumen. On a similar note, it would be nice if there was some way to check whether risk aversion or other personal characteristics that directly influence self-employment choice have been affected. One might also mention that the good state of the economy in general after the reform possibly masked differences in entrepreneurial quality that --- following the creative destruction idea that the authors advocate --- would only be revealed when times turn sour, as for example in the Great Recession that started five years after the reform.
+
+Finally, it should be noted that these results do not necessarily imply that marginal entrepreneurs have approximately the same quality as inframarginal ones. Although the boom in firm creation was quite sizeable, difference in average characteristics of firms might be bleached out by the still large majority of inframarginal firms. The authors might simply be too underpowered to detect any systematic differences in averages coming from the minority of marginal entrepreneurs.
 The authors acknowledge this shortcoming and therefore offer a back-of-the-envelope calculation for marginal effects on firm quality. The idea is that under the assumption that observed differential changes in average measures in Q4 compared to Q1 are solely and entirely driven by marginal entrepreneurs, we can back out the average quality of marginal entrepreneurs. For example, HSST showcase that under these assumptions marginal entrepreneurs exhibit a 7 percent point lower hiring and exit rates than inframarginal entrepreneurs. I have to remark that the authors make a mistake here by confusing percentage point with percent at one point in the calculation, though the number changes only slightly when correcting for this. Also, Delta method inference could have been used to calculate a standard error.
-
-It is possible that the good state of the economy in general masked differences in entrepreneurial quality that would only be revealed when times turn sour, as for example in the Great Recession that started five years after the reform.
 
 
 \subsection{Aggregate economic effects}
 
-Finally, the authors also consider effects that the inflow of new business exerted on incumbent firms. 
+Finally, the authors also consider effects that the inflow of new business exerted on incumbent firms. Using tax accounting data containing information about number of employees at and 2 years after firm creation, the authors first show that the reforms had an unambiguous positive effect on jobs created in new firms (21 percentage points in Q4 versus Q1). However, there was also a significant negative effect on employment in small incumbent firms in the same industry, though not on large incumbents. When assessing the aggregate net impact on employment in both newly-created firms and small incumbents, the authors cannot reject the null that the reform had zero effect on overall employment and hence that new firms crowded out employment from incumbents one-to-one.
 
+To test for Schumpeterian dynamics of creative destruction, HSST again use data from tax accounting files to generate proxies for firm productivity. Wages, value added, and sales per worker are consistently higher in new firms compared to existing firms. Importantly, this did not change after the reform and also not in differentially for high and low treatment industries. Although some point estimates point to a potentially diminished bonus through the reform, none of them are individually significant at the five percent level. Overall, this is consistent with the previously discussed evidence that quality of new entrepreneurs did not decrease after the reform.
 
 \section{Conclusion}
+
+(This section is intentionally left blank.)\footnote{Everything is in the main text. I feel no urge for repeating myself.}
